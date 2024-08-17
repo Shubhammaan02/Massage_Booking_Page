@@ -1,0 +1,2203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Sofia+Sans+Condensed:ital@1&display=swap');
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background-color: rgb(96, 137, 139);
+}
+.top-bar-btn {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.top-bar-btn:hover {
+    cursor: pointer;
+}
+.slidexx-container {
+    color: white; 
+    text-align: center; 
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.select-city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgb(96, 137, 139);
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    z-index: 1;
+}
+.profile-menu a {
+    text-decoration: none;
+}
+.profile-menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;  
+}
+.profile-menu-item:hover {
+    background-color: #555;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(96, 137, 139);
+    min-width: 160px;
+    box-shadow: 0px -8px 16px 0px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+    top: 0;
+    right: 100%;   
+}
+
+/* Style for the dropdown items */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #555;
+}
+.dropdown.open .dropdown-content {
+    display: block;
+}
+.marg-top{
+    margin-top: 3rem;
+}
+.scrollable {
+    width: 100%;
+    height: 580px;
+    overflow: auto;
+}
+.scrollable::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+.massage-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.massage-card {
+    width: 440px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;   
+}
+.fullbody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fullbody span {
+    font-size: 15px;
+}
+.fullbody h1 {
+    font-size: 16px;
+    color: rgb(96, 137, 139);
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.icon-button {
+    border: none;
+    background-color: #fff;
+}
+.share-options {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.share-option {
+    display: flex;
+    margin: 5px 0;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+.share-option:last-child {
+    border-bottom: none;
+}
+.share-option i {
+    margin-right: 10px;
+}
+.massage-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.massage-details .addMbutton {
+    background-color: rgb(96, 137, 139);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.massage-details .decrement,
+.massage-details .increment {
+    border: none;
+}
+.duration-price span {
+    font-size: 14px;
+}
+.fees del {
+    color: red;
+}
+.fees span {
+    color: blue;
+}
+.quantity-selector {
+    display: none;
+}
+.quantity-selector button {
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.line-with-shadow {
+    width: 90%;
+    height: 1px;
+    background-color: #000;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.detailsOuterBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailsSection {
+    width: 440px;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+}
+.paraheading {
+    text-align: center;
+    color: rgb(96, 137, 139);
+    font-weight: 900;
+    font-size: 16px;
+}
+.baksha {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px 6px rgba(96, 137, 139, 0.2);
+}
+.baksha p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.detailsSection img {
+    width: 30px;
+    height: 30px;
+}
+.whychoosejiifit {
+    text-align: center;
+    color: rgb(96, 137, 139);
+    font-weight: 900;
+    margin-top: 30px;
+}
+.jiifitspeciality {
+    overflow: hidden;
+}
+.formarqueeanimation {
+    display: inline-flex;
+    animation: marquee 20s linear infinite; 
+}
+.footerContents {
+    text-align: center;
+    width: 200px;
+    margin: 0 10px;
+}
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.footerContents img {
+    width: 40px; 
+    height: auto;  
+}
+.footerContents span {
+    font-size: 12px;
+    font-weight: 400;
+}
+.footerContents p {
+    font-size: 12px;
+}
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.add-card {
+    display: none;
+    width: 440px;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.crazyheading {
+    color: rgb(96, 137, 139);
+    font-size: 14px;
+    font-weight: 800;
+    margin: 10px;
+}
+.bundle-container {
+    display: flex;
+    position: relative;
+    border: 0px solid rgb(96, 137, 139);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 0px 5px 10px 0px rgba(139, 139, 139, 0.5);
+    overflow-x: scroll;
+    margin: 10px;
+}
+.bundle-container::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+.bundle-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.boxcard {
+    display: flex;
+    width: 55%;
+    height: 35vh;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out; 
+}
+.offer-getDetails {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+.swing-animation {
+    align-items: center;
+    color: white;
+    background-color: green;
+    font-size: 10px;
+    padding: 1px 5px;
+}
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    color: blue;
+    font-size: 10px;
+    padding: 1px 5px;
+}
+.boxcard img {
+    width: 20%;
+}
+.boxcard p {
+    font-size: 12px;
+}
+.priceandtime {
+    display: flex;
+}
+.price-first {
+    margin-right: 20px;
+    font-size: 12px; 
+}
+.discount-price {
+    margin: auto;
+}
+.discount-price del {
+    text-decoration: red line-through;
+}
+.time-second {
+    margin-left: 20px;
+    font-size: 12px;
+}
+.add-service-btn {
+    width: 45px;
+    border: 2px solid #007bff;
+    background-color: white;
+    padding: 5px;
+    font-size: 8px;
+    border-radius: 7px;
+}
+
+/* modal card popoup css start */
+.crazymodal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    background: #fff;
+}
+.modalmassage-card {
+    width: 440px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.detailsHere {
+    color: blue;
+}
+.addXbutton {
+    background-color: rgb(96, 137, 139);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.quantity-meter {
+    display: none;
+}
+.quantity-meter button {
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+/* modal card popoup css end */
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidecard1 {
+    display: none;
+}
+.card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+    border: 0px solid rgb(96, 137, 139);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+}
+.left-side {
+    flex: 1;
+}
+.right-side {
+    margin-left: 10px;
+}
+.view-btn {
+    background-color: rgb(96, 137, 139);
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-card1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.noteCard {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 9px;
+    display: flex;
+    justify-content: center;
+}
+.payment-nextX {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.insideNoteCard {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.total-amountX {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 440px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.left-side1 {
+    flex: 1;
+    color: rgb(26, 26, 237);
+}
+.leftSideNote {
+    flex: 1;
+    color: rgb(26, 26, 237);
+}
+.total-amount-display {
+    flex: 1;
+    color: rgb(26, 26, 237);
+}
+.total-amount-display i {
+    font-size: 14px;
+}
+.right-side1 {
+    margin-left: 10px;
+}
+.rightSideNote {
+    margin-left: 10px;
+}
+.hidden {
+    display: none !important;
+}
+
+/* modal popup get details css start here */
+.modalDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addonsdetails {
+    position: fixed;
+    top: 5%;
+    display: none;
+    width: 440px;
+    height: 100%;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.insideAddonsDetails {
+    width: 100%;
+    height: 100%; 
+    overflow-y: auto;
+}
+.insideAddonsDetails::-webkit-scrollbar {
+    display: none;
+}
+.ekhilineme {
+    display: flex;
+}
+.back-icon {
+    border: none;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.modalParaHeading {
+    text-align: center;
+    color: rgb(96, 137, 139);
+    font-weight: 900;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.addonsdetails img {
+    width: 30px;
+    height: 30px;
+}
+/* modal popup get details css end here */
+
+/* Payment summary css start here */
+.paymentouter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paymentinner {
+    display: none;
+    width: 440px;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.paymentcontainer h3 {
+    font-size: 15px;
+    color: #333;
+}
+.paymentSummaryOuter2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paymentSummaryInner2 {
+    width: 440px;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.paymentSummarycontainer2 h3 {
+    font-size: 15px;
+    color: #333;
+}
+
+.summary-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.headerXX {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 700;
+}
+.headerXY {
+    display: flex;
+    justify-content: space-between;
+    gap: 13px;
+}
+.inrow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+.acer {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+.savemoneyinrow {
+    justify-content: center;
+    color: rgb(96, 137, 139);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.gstinrow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+.total {
+    font-weight: bold;
+}
+#servicetotal {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+#servicetotal2 {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+.serviceXX {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.border-line {
+    border-top: 2px solid #333;
+    margin: 20px 0;
+}
+.cancellation-policy h4 {
+    font-size: 13px;
+    margin-top: 20px;
+}
+.cancellation-policy p {
+    font-size: 10px;
+}
+.policy-terms {
+    display: flex;
+    gap: 10px;
+}
+.policy-terms button {
+    border: none;
+    color: white;
+    background-color: rgb(96, 137, 139);
+    border-radius: 5px;
+    font-size: 10px;
+}
+/* Payment summary css end here */
+.next-btn {
+    background-color: rgb(26, 26, 237);
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.next-btn:hover {
+    background-color: rgb(59, 59, 233);
+}
+
+/* 2nd work css */
+.addressouter {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.addressinner {
+    width: 440px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+.addressForm {
+    margin-top: 20px;
+}
+.outer-addressForm {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.inside-addressForm {
+    position: relative;
+}
+.inside-addressForm input {
+    box-sizing: border-box;
+}
+.inside-addressForm label {
+    position: absolute;
+    left: 10px;
+    top: 34%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    background-color: white;
+    padding: 0 5px;
+    color: #aaa;
+}
+.inside-addressForm input:focus + label,
+.inside-addressForm input:not(:placeholder-shown) + label {
+    top: 0px;
+    left: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.addressForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.addressForm input, .addressForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.whole-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+.whole-address i {
+    color: black;
+}
+.inside-whole-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whole-address span {
+    font-size: 15px;
+    font-weight: bold;
+}
+.address-type {
+    margin: 20px auto;
+}
+.address-type label {
+    font-size: 12px;
+    font-weight: bold;
+}
+.save-address-class {
+    display: flex;
+    gap: 10px;
+}
+.save-address-class span {
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgb(96, 137, 139);
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+}
+.outer-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.form-container {
+    width: 440px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+p i.fa-arrow-left {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+p i.fa-arrow-left:hover {
+    color: #0056b3;
+}
+.for_massage {
+    margin-top: 0.5rem;
+    margin-bottom: 15px;
+}
+.massage_for {
+    margin-top: 0.5rem;
+    margin-bottom: 15px;
+}
+.for_massage label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.massage_for label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.for_massage input[type="radio"],
+.for_massage input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 15px;
+}
+.massage_for input[type="radio"],
+.massage_for input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 15px;
+}
+.for_massage span {
+    font-size: 14px;
+}
+.massage_for span {
+    font-size: 14px;
+}
+.additional-note {
+    display: flex;
+    margin: 10px auto;
+}
+.additional-note p {
+    position: relative;
+    left: 0;
+}
+.additional-note textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+.booking-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.date-selection {
+    width: 440px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+.selectdateheading {
+    font-size: 18px;
+    font-weight: bold;
+}
+.date-btn {
+    display: inline-block;
+    width: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 4px;
+    font-size: 15px;
+}
+.time-selection {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.time-selection.active {
+    display: block;
+}
+.time-selection {
+    display: none;
+}
+.time-selection p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.time-buttons:hover {
+    cursor: pointer;
+}
+.time-btn {
+    width: 90px;
+    font-size: 15px;
+}
+.custom-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.setprofile-container {
+    width: 440px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+.custom-dropdown {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.custom-dropdown select {
+    width: 130px;
+    height: 6vh;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 5px;
+}
+.custom-heading div {
+    color: black;
+    font-size: 18px;
+}
+.gender-span {
+    color: gray;
+    font-size: 12px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-height: 60vh;
+    overflow: auto;
+}
+.grid::-webkit-scrollbar {
+    display: none;
+}
+.cardT {
+    position: relative;
+    width: 100%;
+    height: 37vh;
+    border: 1px solid #60898b;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardT:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.cardT.selected {
+    border: 2px solid #6200ea;
+}
+.cardT {
+    display: none; /* Hide all cards initially */
+}
+.cardT a {
+    text-decoration: none;
+}
+.book-button {
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1.5px solid blue;
+    cursor: pointer;
+    font-size: 11px;
+}
+.book-button:hover {
+    background-color: #f5f5f5;
+}
+.img-star-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-star-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+.icon-star {
+    margin-top: -6px;
+    font-size: 12px;
+    font-weight: 900;
+    box-shadow: 2px 4px 4px 3px;
+    border-radius: 20px;
+}
+.therapist-info span {
+    font-weight: bold;
+    font-size: 10px;
+}
+.therapist-info p {
+    font-size: 11px;
+    margin: 2px 0;
+}
+.about-me {
+    background-color: #BDD8E1;
+    color: #111;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 225px;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup-content h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+/* Section 4 css */
+.thiscontainerotp {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.thisinsideotp {
+    width: 440px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+.input-container {
+    position: relative;
+    margin: 20px;
+    width: 300px;
+}
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.input-container label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    transition: 0.2s;
+    pointer-events: none;
+    background: white;
+}
+.input-container input:focus+label,
+.input-container input:valid+label {
+    top: -11px;
+    font-size: 14px;
+    color: #333;
+}
+.booking-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otp-btnn {
+    background-color: cadetblue;
+    color: #fff;
+    padding: 5px 9px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.otp-btnn:hover {
+    background-color: rgb(113, 187, 189);
+    text-decoration: none;
+    color: white;
+}
+/* Section 5 css */
+.otp-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.otpNextcontainer {
+    width: 440px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-top: 70px;
+}
+.logoi {
+    display: flex;
+    justify-content: center;
+}
+.logoi img {
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+}
+.otpsectionheading {
+    font-size: 15px;
+    text-align: center;
+}
+.digit {
+    text-align: center;
+    font-size: 13px;
+}
+.inputS {
+    display: flex;
+    justify-content: center;
+}
+.otp-input {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+}
+.verify-button {
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.timer, .resendOTP {
+    margin-left: 30px;
+    font-size: 11px;
+}
+.resend-link {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.centermeinaaja {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 600px) { 
+    
+}
+@media (max-width: 480px) {
+    .top-bar {
+        padding: 5px 5px;
+    }
+    .slidexx-container {
+        font-size: 10px;
+    }
+    .scrollable {
+        height: 640px;
+    }
+    .fullbody h1 {
+        font-size: 13px;
+    }
+    .icon-button i {
+        font-size: 13px;
+        padding: 0;
+    }
+    .icon-button {
+        padding: 0;
+    }
+    .massage-card {
+        width: 360px;
+    }
+    .massage-details .addMbutton, .addXbutton {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .duration-price span {
+        font-size: 12px;
+    }
+    .detailsSection {
+        width: 360px;
+    }
+    .addonsdetails {
+        width: 360px;
+    }
+    .noteCard {
+        right: 0px;
+        bottom: 5px;
+    }
+    .insideNoteCard {
+        width: 360px;
+    }
+    .add-card {
+        width: 360px;
+    }
+    .card1 {
+        width: 360px;
+    }
+    .paymentinner {
+        width: 360px;
+    }
+    .addressinner {
+        width: 360px;
+    }
+    .form-container {
+        width: 360px;
+    }
+    .addressinner p{
+        font-size: 13px;
+    }
+    .crazymodal {
+        left: 4%;
+    }
+    .crazyheading {
+        font-size: 13px;
+    }
+    .modalmassage-card {
+        width: 350px;
+    }
+    .detailsHere span {
+        font-size: 12px;
+    }
+    .detailsHere {
+        font-size: 12px;
+    }
+    .swing-animation {
+        font-size: 9px;
+    }
+    .boxcard {
+        width: 60%;
+    }
+    .boxcard p {
+        font-size: 11px;
+    }
+    .price-first {
+        font-size: 12px;
+    }
+    .left-side {
+        font-size: 15px;
+    }
+    .view-btn {
+        font-size: 15px;
+    }
+    .paraheading {
+        font-size: 13px;
+    }
+    .modalParaHeading {
+        font-size: 13px;
+    }
+    .baksha b {
+        font-size: 12px;
+    }
+    .baksha p {
+        font-size: 10px;
+    }
+    .whychoosejiifit {
+        font-size: 13px;
+    }
+    .footerContents b {
+        font-size: 12px;
+    }
+    .footerContents p {
+        font-size: 11px;
+    }
+    .leftSideNote {
+        font-size: 14px;
+    }
+    .next-btn {
+        font-size: 14px;
+    }
+    .paymentcontainer h3 {
+        font-size: 14px;
+    }
+    .summary-section p{
+        font-size: 12px;
+    }
+    .headerinrow, .headerXY {
+        font-size: 9px;
+    }
+    .headerXY {
+        gap: 7px;
+    }
+    .acer {
+        gap: 30px;
+    }
+    .serviceXX {
+        gap: 16px;
+    }
+    .inrow, .gstinrow {
+        font-size: 9px;
+    }
+    .total {
+        font-size: 11px;
+    }
+    .savemoneyinrow {
+        font-size: 12px;
+    }
+    .cancellation-policy h4 {
+        font-size: 12px;
+    }
+    .cancellation-policy p {
+        font-size: 11px;
+    }
+    .policy-terms {
+        font-size: 14px;
+    }
+    .outer-addressForm {
+        gap: 15px;
+    }
+    .whole-address span {
+        font-size: 14px;
+    }
+    .inside-whole-address {
+        font-size: 14px;
+    }
+    .whole-address i {
+        font-size: 14px;
+    }
+    .address-type label {
+        font-size: 13px;
+    }
+    .save-address-class span {
+        font-size: 13px;
+    }
+    .left-side1, .right-side1 {
+        font-size: 14px;
+    }
+    .form-container p {
+        font-size: 13px;
+    }
+    .for_massage label {
+        font-size: 13px;
+    }
+    .for_massage input {
+        font-size: 13px;
+    }
+    .for_massage span {
+        font-size: 12px;
+    }
+    .massage_for label {
+        font-size: 13px;
+    }
+    .additional-note p {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .date-selection {
+        width: 360px;
+    }
+    .date-selection p {
+        font-size: 13px;
+    }
+    .date-btn {
+        width: 35px;
+        padding: 5px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    .time-btn {
+        width: 70px;
+        font-size: 12px;
+    }
+    .setprofile-container {
+        width: 360px;
+    }
+    .setprofile-container p {
+        font-size: 13px;
+    }
+    .custom-heading div {
+        font-size: 14px;
+    }
+    .gender-span {
+        font-size: 12px;
+    }
+    .massage_type option {
+        font-size: 13px;
+    }
+    .grid {
+        max-height: 55vh;
+    }
+    .cardT {
+        height: 29vh;
+    }
+    .therapist-info span{
+        font-size: 10px;
+    }
+    .therapist-info p{
+        font-size: 10px;
+    }
+    .book-button {
+        width: 60%;
+        font-size: 10px;
+    }
+    .thisinsideotp {
+        width: 360px;
+    }
+    .thisinsideotp p{
+        font-size: 13px;
+    }
+    .input-container input, label {
+        font-size: 12px;
+    }
+    .otp-btnn {
+        font-size: 13px;
+    }
+    .otpNextcontainer {
+        width: 360px;
+    }
+    .otpsectionheading {
+        font-size: 13px;
+    }
+    .digit {
+        font-size: 12px;
+    }
+    .otp-input {
+        font-size: 14px;
+    }
+    .timer, .resendOTP {
+        font-size: 10px;
+    }
+    .resend-link {
+        font-size: 12px;
+    }
+    .verify-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .scrollable {
+        height: 630px;
+    }
+    .fullbody h1 {
+        font-size: 12px;
+    }
+    .icon-button i {
+        font-size: 12px;
+        padding: 0;
+    }
+    .icon-button {
+        padding: 0;
+    }
+    .massage-card {
+        width: 340px;
+    }
+    .massage-details .addMbutton, .addXbutton {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .duration-price span {
+        font-size: 11px;
+    }
+    .detailsSection {
+        width: 335px;
+    }
+    .addonsdetails {
+        width: 335px;
+    }
+    .noteCard {
+        right: 0px;
+    }
+    .insideNoteCard {
+        width: 335px;
+    }
+    .add-card {
+        width: 335px;
+    }
+    .card1 {
+        width: 335px;
+    }
+    .paymentinner {
+        width: 335px;
+    }
+    .addressinner {
+        width: 335px;
+    }
+    .form-container {
+        width: 335px;
+    }
+    .addressinner p {
+        font-size: 12px;
+    }
+    .crazymodal {
+        left: 2%;
+    }
+    .crazyheading {
+        font-size: 11px;
+    }
+    .modalmassage-card {
+        width: 335px;
+    }
+    .detailsHere span {
+        font-size: 11px;
+    }
+    .detailsHere {
+        font-size: 11px;
+    }
+    .swing-animation {
+        font-size: 9px;
+    }
+    .boxcard {
+        width: 60%;
+    }
+    .boxcard p {
+        font-size: 9px;
+    }
+    .price-first {
+        font-size: 11px;
+    }
+    .left-side {
+        font-size: 14px;
+    }
+    .view-btn {
+        font-size: 14px;
+    }
+    .paraheading {
+        font-size: 11px;
+    }
+    .modalParaHeading {
+        font-size: 11px;
+    }
+    .baksha b {
+        font-size: 11px;
+    }
+    .baksha p {
+        font-size: 10px;
+    }
+    .whychoosejiifit {
+        font-size: 11px;
+    }
+    .footerContents b {
+        font-size: 11px;
+    }
+    .footerContents p {
+        font-size: 10px;
+    }
+    .leftSideNote {
+        font-size: 14px;
+    }
+    .next-btn {
+        font-size: 14px;
+    }
+    .paymentcontainer h3 {
+        font-size: 13px;
+    }
+    .summary-section p{
+        font-size: 11px;
+    }
+    .headerinrow, .headerXY {
+        font-size: 9px;
+    }
+    .headerXY {
+        gap: 7px;
+    }
+    .acer {
+        gap: 40px;
+    }
+    .serviceXX {
+        gap: 25px;
+    }
+    .inrow, .gstinrow {
+        font-size: 8px;
+    }
+    .total {
+        font-size: 10px;
+    }
+    .savemoneyinrow {
+        font-size: 11px;
+    }
+    .cancellation-policy h4 {
+        font-size: 11px;
+    }
+    .cancellation-policy p {
+        font-size: 10px;
+    }
+    .policy-terms {
+        font-size: 13px;
+    }
+    .outer-addressForm {
+        gap: 10px;
+    }
+    .whole-address span {
+        font-size: 12px;
+    }
+    .inside-whole-address {
+        font-size: 12px;
+    }
+    .whole-address i {
+        font-size: 12px;
+    }
+    .address-type label {
+        font-size: 12px;
+    }
+    .save-address-class span {
+        font-size: 12px;
+    }
+    .left-side1, .right-side1 {
+        font-size: 14px;
+    }
+    .form-container p {
+        font-size: 12px;
+    }
+    .for_massage label {
+        font-size: 12px;
+    }
+    .for_massage input {
+        font-size: 12px;
+    }
+    .for_massage span {
+        font-size: 11px;
+    }
+    .massage_for label {
+        font-size: 12px;
+    }
+    .additional-note p {
+        font-size: 12px;
+    }
+    .date-selection {
+        width: 335px;
+    }
+    .date-selection p {
+        font-size: 12px;
+    }
+    .date-btn {
+        width: 30px;
+        font-size: 11px;
+    }
+    .time-btn {
+        width: 60px;
+        font-size: 10px;
+    }
+    .setprofile-container {
+        width: 335px;
+    }
+    .setprofile-container p {
+        font-size: 12px;
+    }
+    .custom-heading div {
+        font-size: 13px;
+    }
+    .gender-span {
+        font-size: 10px;
+    }
+    .massage_type option {
+        font-size: 12px;
+    }
+    .grid {
+        max-height: 55vh;
+    }
+    .cardT {
+        height: 35vh;
+        padding: 20px;
+    }
+    .therapist-info span{
+        font-size: 10px;
+    }
+    .therapist-info p{
+        font-size: 10px;
+    }
+    .book-button {
+        width: 60%;
+        font-size: 10px;
+    }
+    .thisinsideotp {
+        width: 335px;
+    }
+    .thisinsideotp p{
+        font-size: 12px;
+    }
+    .input-container input, label {
+        font-size: 11px;
+    }
+    .otp-btnn {
+        font-size: 12px;
+    }
+    .otpNextcontainer {
+        width: 335px;
+    }
+    .otpsectionheading {
+        font-size: 12px;
+    }
+    .digit {
+        font-size: 11px;
+    }
+    .otp-input {
+        font-size: 13px;
+    }
+    .timer, .resendOTP {
+        font-size: 9px;
+    }
+    .resend-link {
+        font-size: 11px;
+    }
+    .verify-button {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}
+
+.outerMenuPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 50px;*/
+}
+.innerMenuPage {
+    background-color: white;
+    overflow-y: auto; /* Enables vertical scrolling */
+    width: 100%; /* Adjust this value as needed */
+    height: 85%;
+    max-height: 100%;
+}
+.innerMenuPage::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+.backMenuBtn {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    color: #60898b;
+}
+.exclusive-body2 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.new-menu-icon2 {
+    display: flex;
+    align-items: center;
+    color: rgb(96, 137, 139);
+    font-size: 30px;
+    margin: 20px;
+    gap: 10px;
+}
+.outer-big-square2 {
+    display: flex;
+    justify-content: center;
+    transform: translateX(10%);
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(96, 137, 139, 0.5);
+}
+.exclusive-container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.bundle-box2 {
+    width: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.bundle-box2:hover {
+    transform: scale(1.05);
+}
+.bundle-box2 h2 {
+    display: initial;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    float: none;
+    font-weight: normal;
+}
+.massage-icon img {
+    width: 25%;
+    margin-bottom: 10px;
+}
+.bundle-box2 p {
+    font-size: 10px;
+}
+.independentBoxes2 {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0 20px;
+}
+.independentBoxes2 h2 {
+    text-align: left;
+    margin: 0;
+    padding: 28px 0 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: #60898b;
+}
+.bundle-container2 {
+    display: flex;
+    position: relative;
+    border: 0px solid rgb(96, 137, 139);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 6px 6px 6px 6px rgba(96, 137, 139, 0.2);
+    overflow-x: scroll;
+}
+.bundle-container2::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+.bundle-container2 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.boxcard2 {
+    display: flex;
+    width: 20%;
+    height: 40vh;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    overflow: hidden; 
+    flex-shrink: 0;
+    transition: transform 0.5s ease-in-out; 
+}
+.boxcard2 img {
+    width: 30%;
+}
+.boxcard2 p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .outer-big-square2 {
+        width: 80%;
+        transform: translateX(10%);
+    }
+    .bundle-box2 {
+        width: 40%;
+        margin: 20px;
+    }
+    .bundle-box2 h2 {
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .massage-icon img {
+        width: 20%;
+    }
+    .boxcard2 {
+        width: 50%;
+        height: 35vh;
+    }
+    .boxcard2 p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-menu-icon2 {
+        font-size: 20px;
+    }
+    .outer-big-square2 {
+        width: 90%;
+        transform: translateX(1%);
+        padding: 10px;
+    }
+    .bundle-box2 {
+        width: 40%;
+        margin: 10px;
+    }
+    .bundle-box2 h2 {
+        font-size: 8px;
+    }
+    .bundle-box2 p {
+        font-size: 8px;
+    }
+    .massage-icon img {
+        width: 30%;
+    }
+    .boxcard2 {
+        width: 60%;
+        height: 30vh;
+    }
+    .boxcard2 p {
+        font-size: 11px;
+    }
+}
+
+/* cart css start here */
+.cart-body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.movable-cart {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+.badge {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 10px;
+}
+.cart-popup, .cart-popup2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding-top: 50px;
+    border-radius: 8px;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+}
+.cart-popup.hidden {
+    display: none;
+}
+.cart-popup2.hidden {
+    display: none;
+}
+.cartXbox {
+    width: 100%;
+    height: 580px;
+    overflow: auto;
+}
+.cartXbox::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+.empty-cart {
+    display: none;
+}
+.empty-cart p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.empty-cart p:nth-child(3) {
+    font-size: 13px;
+}
+.outerCartFull, .outerCartEmpty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartFull, .empty-cart {
+    width: 440px;
+    background-color: #fff;
+    border: 0px solid rgb(96, 137, 139);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.out-cart {
+    display: flex;
+    align-items: center;
+    gap: 38%;
+}
+.close-popup2, .close-popup {
+    color: #60898b;
+    border: none;
+    background-color: #fff;
+    font-size: 20px; 
+}
+.shopping-cart-icon {
+    color: #007bff;
+    text-align: center;
+    font-size: 35px;
+}
+.shopping-cart-icon i {
+    font-size: 35px;
+}
+#cart-items li {
+    font-size: 11px;
+    font-weight: 600;
+}
+.cart-handle-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.trio-btn {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  border: 2px solid #000; 
+}
+.trio-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #60898b;
+    color: #fff; 
+    border: none;
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+}
+.trio-btn button:hover {
+    background-color: #4d6b6d; 
+}
+.trio-btn .quantity {
+    font-size: 14px; 
+    font-weight: bold; 
+    min-width: 30px; 
+    text-align: center; 
+}
+.cart-final-pay {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.button-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inside-btn-row {
+    position: relative;
+    padding: 5px;
+    background: linear-gradient(0deg, #fcfcfc 0%, #f5f5f5 100%);
+    border: 6px solid transparent;
+    border-radius: 16px;
+    background-clip: padding-box;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.5), 1px 3px 3px 2px #fff, 0 0 0 6px #ECECEC;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    transition: border 0.1s ease-in-out, padding 0.1s ease-in-out, margin 0.1s ease-in-out;
+}
+.inside-btn-row:after {
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -6px;
+    right: -6px;
+    background: linear-gradient(#fff, #ededed);
+    content: "";
+    z-index: -1;
+    border-radius: 16px;
+}
+.inside-btn-row:hover {
+    border: 2px solid transparent;
+    background-image: linear-gradient(180deg, #E6E6E6 0%, #F7F7F7 100%);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35), 0 0 0 6px #ECECEC;
+    padding: 10px;
+}
+.inside-btn-row:active {
+    border-top: 1px solid transparent;
+}
+.cart-popup2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+
+@media (max-width: 480px) {
+    .cart-popup, .cart-popup2 {
+        width: 355px;
+    }
+    .empty-cart i {
+        font-size: 30px;
+    }
+    .shopping-cart-icon i {
+        font-size: 30px;
+    }
+    .empty-cart p {
+        font-size: 12px;
+    }
+    .empty-cart p:nth-child(3) {
+        font-size: 11px;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .cart-popup, .cart-popup2 {
+        width: 330px;
+    }
+    .empty-cart p {
+        font-size: 11px;
+    }
+    .empty-cart p:nth-child(3) {
+        font-size: 10px;
+    }
+    
+}
+/* cart css end here */
